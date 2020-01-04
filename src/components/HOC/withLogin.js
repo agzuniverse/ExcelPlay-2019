@@ -10,9 +10,9 @@ const withLogin = Component => {
     const newDate = new Date(JSON.parse(localStorage.getItem('expires_at')));
     if (currentDate<newDate) {
       return Component;
-    } else {
+    } 
       alert('Login Expired');
-    }
+    
   } else {
     alert('Not Logged in');
   }

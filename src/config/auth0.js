@@ -22,7 +22,7 @@ export const login = () => {
 };
 
 export const handleAuthentication = (hash, history) => {
-  webAuth.parseHash({ hash: hash }, function(err, authResult) {
+  webAuth.parseHash({ hash }, function(err, authResult) {
     if (err) {
       return console.log(err);
     }
@@ -42,7 +42,7 @@ const setSession = async (authResult, redirect) => {
   localStorage.setItem('expires_at', JSON.stringify(newdate));
   const body = new FormData();
   body.append('access_token', authResult.accessToken);
-  const res = await http.post(ApiRoot + 'auth/v1/signin', body);
+  const res = await http.post(`${ApiRoot  }auth/v1/signin`, body);
   if (res.Error) {
     alert('Login failed');
     redirect('/login');

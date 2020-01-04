@@ -56,7 +56,7 @@ const DalalbullPortfolio = props => {
   }, []);
   if (props.match.url.includes('Portfolio'))
     return <ExclusiveView portfolioDetails={portfolioDetails} />;
-  else return <HomeView portfolioDetails={portfolioDetails} />;
+  return <HomeView portfolioDetails={portfolioDetails} />;
 };
 
 export default DalalbullPortfolio;

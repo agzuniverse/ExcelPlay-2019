@@ -3,7 +3,7 @@ import './Modal.scss';
 
 const Modal = ({ visibility, setVisibility, children }) => {
   return (
-    <div className="custom-modal" style={{ visibility: visibility }}>
+    <div className="custom-modal" style={{ visibility }}>
       <span className="close" onClick={() => setVisibility('hidden')}>
         &times;
       </span>

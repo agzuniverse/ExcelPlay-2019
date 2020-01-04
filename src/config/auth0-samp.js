@@ -12,10 +12,10 @@ export class AuthService {
     responseType: 'token id_token',
     // audience: 'https://excelplay2k18.auth0.com/userinfo',
     redirectUri:
-      'http://' +
-      window.location.hostname +
-      (window.location.port ? ':' + window.location.port : '') +
-      '/callback',
+      `http://${ 
+      window.location.hostname 
+      }${window.location.port ? `:${  window.location.port}` : '' 
+      }/callback`,
     scope: 'openid profile email',
   });
 
@@ -25,7 +25,7 @@ export class AuthService {
       const loader = new ProgressiveLoader();
       loader.placeLoader('Auth_const');
       this.http
-        .get(ApiRoot() + '/auth/v1/token', {
+        .get(`${ApiRoot()  }/auth/v1/token`, {
           withCredentials: true,
           observe: 'response',
         })

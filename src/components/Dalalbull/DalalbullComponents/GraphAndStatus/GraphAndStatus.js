@@ -64,8 +64,8 @@ const options = {
 };
 
 const GraphAndStatus = props => {
-  let new_label = [];
-  let new_data = [];
+  const new_label = [];
+  const new_data = [];
   if (props.graphData) {
     props.graphData.map(gdata => {
       new_label.push(Math.round(gdata[0] / 60));

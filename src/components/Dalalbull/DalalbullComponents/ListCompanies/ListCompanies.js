@@ -6,7 +6,7 @@ import Fuse from 'fuse.js';
 
 const allCompany = companies => {
   return companies.map(company => (
-    <Company {...company} key={company['symbol']} />
+    <Company {...company} key={company.symbol} />
   ));
 };
 
@@ -16,8 +16,8 @@ const ListCompanies = () => {
   const [result, setResult] = useState([]);
   useEffect(() => {
     getCompanies().then(res => {
-      setCompanies(res['tickerData']);
-      setResult(res['tickerData']);
+      setCompanies(res.tickerData);
+      setResult(res.tickerData);
     });
   }, []);
   useEffect(() => {
