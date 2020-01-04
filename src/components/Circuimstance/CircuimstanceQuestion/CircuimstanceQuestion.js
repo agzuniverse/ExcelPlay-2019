@@ -20,7 +20,7 @@ const CircuimstanceQuestion = props => {
         <input
           className="answer"
           placeholder="YOUR ANSWER..."
-          style={{ textTransform: "lowercase" }}
+          style={{ textTransform: 'lowercase' }}
           onChange={txt => setText(txt.target.value.toLowerCase())}
         />
         <button

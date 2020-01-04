@@ -7,9 +7,10 @@ import './App.scss';
 
 const Dalalbull = lazy(() => import('./components/Dalalbull/DalalBull'));
 const Kryptos = lazy(() => import('./components/Kryptos/Kryptos'));
-const Circuimstance = lazy(() => import('./components/Circuimstance/Circuimstance'));
+const Circuimstance = lazy(() =>
+  import('./components/Circuimstance/Circuimstance'),
+);
 const Login = lazy(() => import('./components/Accounts/Login/Login'));
-
 
 const App = () => (
   <Suspense fallback={<Spinner />}>

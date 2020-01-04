@@ -65,8 +65,8 @@ const DalalbullRules = () => {
               50%.
             </li>
             <li>
-              Net Worth: The total of cash balance, margin and worth of all the stocks
-              in procession and this decides your rank.
+              Net Worth: The total of cash balance, margin and worth of all the
+              stocks in procession and this decides your rank.
             </li>
             <li>
               No. of Transaction: The total number of transactions carried out
@@ -104,9 +104,7 @@ const DalalbullRules = () => {
           The admins have the ability to disqualify any players for fraudulent
           behavior.
         </li>
-        <li>
-          The last day of trading will be Nov 1st 2019(Friday).
-        </li>
+        <li>The last day of trading will be Nov 1st 2019(Friday).</li>
       </ol>
     </div>
   );

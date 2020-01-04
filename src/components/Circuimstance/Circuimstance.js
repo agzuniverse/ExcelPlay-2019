@@ -19,7 +19,11 @@ const Circuimstance = props => {
       </GameHeader>
       <Switch>
         <Route exact path={`${match.url}/`} component={CircuimstancePlay} />
-        <Route exact path={`${match.url}/rules`} component={CircuimstanceRules} />
+        <Route
+          exact
+          path={`${match.url}/rules`}
+          component={CircuimstanceRules}
+        />
         <Route
           exact
           path={`${match.url}/ranklist`}

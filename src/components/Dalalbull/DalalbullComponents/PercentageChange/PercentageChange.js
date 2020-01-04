@@ -8,14 +8,13 @@ const ChangeInPercentage = ({ change_per }) => {
         <i className="fa fa-arrow-up" />+{change_per}%
       </span>
     );
-  } 
-    return (
-      <span className="percentage-change negative-change">
-        <i className="fa fa-arrow-down" />
-        {change_per}%
-      </span>
-    );
-  
+  }
+  return (
+    <span className="percentage-change negative-change">
+      <i className="fa fa-arrow-down" />
+      {change_per}%
+    </span>
+  );
 };
 
 export default ChangeInPercentage;
